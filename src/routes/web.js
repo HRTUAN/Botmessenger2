@@ -1,18 +1,14 @@
 import express from "express";
-import homepageController from "../controllers/homepageController";
+import homeController from "../controllers/HomeController";
 
 let router = express.Router();
 
-let initWebRoutes = (app)=> {
-    router.get("/", homepageController.getHomePage);
-    router.get("/webhook", homepageController.getWebhook);
-    router.post("/webhook", homepageController.postWebhook);
-    router.post("/set-up-profile", homepageController.handleSetupProfile);
-    router.get("/set-up-profile", homepageController.getSetupProfilePage);
+let initWebRoutes = (app) => {
+    router.get("/", homeController.getHomePage);
 
-    router.get("/info-order", homepageController.getInfoOrderPage);
-    router.post("/set-info-order", homepageController.setInfoOrder);
-    return app.use("/", router);
-};
+    router.post('/webhook', homeController.postWebhook);
+    router.get('/webhook', homeController.getWebhook)
+    return app.use('/', router);
+}
 
 module.exports = initWebRoutes;

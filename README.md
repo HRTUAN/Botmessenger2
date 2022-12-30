@@ -1,40 +1,32 @@
-# facebook-messenger-Ecommerce-chat-bot
-An online store chatbot uses Facebook Messenger Platform, building from scratch with Node.js Platform.
+# facebook-messenger-restaurant-bot-vietnamese-version
+facebook messenger restaurant bot vietnamese version
+Các bước thực hiện để chạy project này:
 
-## Video demo the bot: https://youtu.be/4zkR4nzmqA4
+### Chuẩn bị môi trường
+1. Cài đặt Git và pull project này về local
+2. Cài đặt Visual Studio Code và NodeJS
+3. Cài đặt Heroku CLI (đã đăng ký 1 tài khoản Heroku, cái này hoàn toàn miễn phí)
 
-- Feel free to test my bot👉:  https://m.me/techShopHaryphamdev
-- The Facebook Page I embed that bot: https://www.facebook.com/techShopHaryphamdev
+### Chạy project
+1. Clone project này: git clone https://github.com/haryphamdev/facebook-messenger-restaurant-bot-vietnamese-version.git
 
-## What can this bot do:
+2. Tại thư mục root, tạo file .env
 
-- Showing categories
-- Looking up order (with a custom web view from node.js server)
-- Talking with "real" live agent (if the user request)
-- Turn on/off the bot
-- Restart the conversation.
+Nội dung file .env thì copy từ file .env.example
 
-### How to setup this bot for your own Facebook Page without any cost ?
+3. Deploy lên Heroku
 
-#### 1. Clone this project
-#### 2. Create a Heroku app
-#### 3. Deploy this project to your Heroku app
-#### 4. Create a Facebook Developer App, A Facebook Page (to embed this bot)
-#### 5. Going to Facebook Developer App, add the Messenger Product, generate FACEBOOK_PAGE_ACCESS_TOKEN, config the webhook (default, the url for the webhook is: <the_domain_your_herokuapp>/webhook ) . 
-#### Remember to update the config variables on Heroku as well.
-#### 6. Enable the option: Build-in NLP on Messenger Product (Natural Laguage Processing) to make the bot understand the sentences with the meaning "greetings", "thanks" and "bye".
-#### 7. Enjoy!
+4. Cấu hình Heroku app, Facebook App, Facebook Webhook
 
-### Several errors you may encouter:
-- Forgetting to update the environment variables on Heroku : go to "Settings option", then "Reveal Congfig Var"
-- The bot only works with the admin account, doesn't reply the others Facebook accounts: need to be approved the "pages_messaging" permission. 
-For detail, watch this video: https://youtu.be/0VRQRHnrGxg
+5. Hướng dẫn chi tiết: Watch this video -> https://www.youtube.com/watch?v=_fEwklHvncU
 
-### Wonder how to build this bot and want to make it yourself, watch my video to build this bot from scratch: https://www.youtube.com/playlist?list=PLNOjHC_BXrfB8DcOCHtKPWPMl4t9PG5cI
+### Thanks for reading <3
 
-### Find me here:
-- Youtube Channel: https://bit.ly/subscribe-haryphamdev
-- Facebook Fanpage: https://facebook.com/haryphamdev
-- Patreon: https://www.patreon.com/haryphamdev
-- Twitter: https://twitter.com/haryphamdev
-- GitHub: https://github.com/haryphamdev
+🌎 Tìm mình tại đây:
+1. Facebook Fanpage (Tiếng việt): https://www.facebook.com/H%E1%BB%8Fi-Ai-Ti-108974170919235
+2. Facebook Fanpage (Tiếng anh): https://www.facebook.com/haryphamdev
+3. Github: https://github.com/haryphamdev
+4. Youtube channel: https://www.youtube.com/channel/UCVkBcokjObNZiXavfAE1-fA?sub_confirmation=1
+5. Email: haryphamdev@gmail.com
+
+Cần giải đáp thắc mắc (hỗ trợ), các bạn vui lòng comment bên dưới video hoặc inbox trực tiếp qua facebook cho mình.
